@@ -35,11 +35,3 @@ acco.forEach((accoItem) => {
         };
     }
 });
-
-// // 아코디언 열릴 때
-// title.querySelector('.material-symbols-outlined').classList.add('rotating-arrow');
-// title.querySelector('.material-symbols-outlined').classList.remove('rotating-arrow-reverse');
-
-// // 아코디언 닫힐 때
-// title.querySelector('.material-symbols-outlined').classList.add('rotating-arrow-reverse');
-// title.querySelector('.material-symbols-outlined').classList.remove('rotating-arrow');
