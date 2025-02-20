@@ -21,8 +21,8 @@ acco.forEach((accoItem) => {
         if(content.style.maxHeight){
             closeAcco(accoItem);
         }else {
-            acco.forEach((accoItem) => closeAcco(accoItem));
+            acco.forEach((accoItem) =>  closeAcco(accoItem));
             openAcco(accoItem);
-        };
-    };
-});
+        }
+    }
+})
