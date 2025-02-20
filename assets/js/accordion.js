@@ -13,7 +13,7 @@ const closeAcco = (accoItem) => {
     content.style.maxHeight = null;
 };
 
-acco.forEach(acco => {
+acco.forEach((acco) => {
     const title = accoItem.querySelector(".acco-items__title");
     const content = accoItem.querySelector("acco-items__contents");
 
