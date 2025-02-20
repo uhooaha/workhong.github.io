@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@import url('reset.css');
+
+#wrapper{width:100%; overflow-x:hidden;margin:0 auto;}
+
+#conWrap { width:1200px; margin:0 auto; position:relative; }
+#conWrap:after { content:""; display:block; clear:both; }
+
+#util { width:185px; height:120px; position:absolute; right:0; top:0; z-index:10; background:url(../images/sub/util.png) no-repeat right top;}
+#util .tooltip {width:114px; height:47px;position:absolute; right:56px; top:120px; background:url(../images/tooltip.png) no-repeat center top; z-index:2; display:none;}
+#util .tooltipBtn {width:50px; height:55px;position:absolute; right:90px; top:70px; }
+
+#gnb{ width:190px; height:410px; float:left; position:relative; background:url(../images/sub/gnb.png) no-repeat left top; }
+#gnb .main{ display:block; width:120px; height:100px; position:absolute; left:5px; top:0; }
+#gnb .menu{ display:block; width:120px; height:300px;position:absolute; left:5px; top:100px; }
+
+#content { width:1000px; float:right; position:relative; z-index:1; }
+
+
+/* lookbook */
+body.lookbook #content { height:1783px; background:url(../images/sub/lb_right.png) no-repeat right top; }
+body.lookbook #content .left { width:600px; height: 805px; position:absolute; left:0; top:0; background:url(../images/sub/lb_left.png) no-repeat 0 0; }
+body.lookbook #content .conlink { display:block; width: 370px; height:1460px; position:absolute; right:0; top:130px;}
+
+
+#footer{ width:100%; height:169px; background:url(../images/footer.png) no-repeat center top;}
+
+
+
+
+@media screen and (max-width:1200px){
+	
+	#conWrap { width:980px; margin:0 auto; position:relative; }
+	#footer{background:url(../images/footer_960.png) no-repeat center top;}
+	
+	#content { width:780px; }
+	
+	/* lookbook */
+	body.lookbook #content { height:1845px; background:url(../images/sub/lb_960.png) no-repeat right top; }
+	body.lookbook #content .left { display:none; }
+	body.lookbook #content .conlink { width: 760px; height:860px; position:absolute; right:10px; top:815px; }
+	
+}
+
