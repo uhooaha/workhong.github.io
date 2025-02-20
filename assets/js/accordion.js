@@ -15,7 +15,7 @@ const closeAcco = (accoItem) => {
 
 acco.forEach((acco) => {
     const title = accoItem.querySelector(".acco-items__title");
-    const content = accoItem.querySelector("acco-items__contents");
+    const content = accoItem.querySelector(".acco-items__contents");
 
     title.onclick = () => {
         if(content.style.maxHeight){
