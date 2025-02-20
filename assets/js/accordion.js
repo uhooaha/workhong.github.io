@@ -1,18 +1,40 @@
-// const acco = document.querySelectorAll(".acco-items");
+const acco = document.querySelectorAll(".acco-items");
 
 
-// const openAcco = (accoItem) => {
-//     const content = accoItem.querySelector(".acco-items__contents");
-//     accoItem.classList.add("acco-active");
-//     content.style.maxHeight = content.scrollHeight + "px";
+const openAcco = (accoItem) => {
+    const content = accoItem.querySelector(".acco-items__contents");
+    accoItem.classList.add("acco-active");
+    content.style.maxHeight = content.scrollHeight + "px";
     
-// };
+};
 
-// const closeAcco = (accoItem) => {
-//     const content = accoItem.querySelector(".acco-items__contents");
-//     accoItem.classList.remove("acco-active");
-//     content.style.maxHeight = null;
-// };
+const closeAcco = (accoItem) => {
+    const content = accoItem.querySelector(".acco-items__contents");
+    accoItem.classList.remove("acco-active");
+    content.style.maxHeight = null;
+};
+
+acco.forEach((accoItem) => {
+    const title = accoItem.querySelector(".acco-items__title");
+    const content = accoItem.querySelector(".acco-items__contents");
+    
+    // title과 content가 모두 존재하는지 확인
+    if (title && content) {
+        title.onclick = () => {
+            if(content.style.maxHeight){
+                closeAcco(accoItem);
+            }else {
+                acco.forEach((item) => {
+                    const itemContent = item.querySelector(".acco-items__contents");
+                    if (itemContent) {
+                        closeAcco(item);
+                    }
+                });
+                openAcco(accoItem);
+            }
+        };
+    }
+});
 
 // acco.forEach((accoItem) => {
 //     const title = accoItem.querySelector(".acco-items__title");
@@ -28,19 +50,19 @@
 //     }
 // })
 
-const acco = document.querySelectorAll(".acco-items");
-console.log("acco elements:", acco, "length:", acco.length);
+// const acco = document.querySelectorAll(".acco-items");
+// console.log("acco elements:", acco, "length:", acco.length);
 
-acco.forEach((accoItem, index) => {
-  const title = accoItem.querySelector(".acco-items__title");
-  const content = accoItem.querySelector(".acco-items__contents");
-  console.log(`Item ${index}:`, {accoItem, title, content});
+// acco.forEach((accoItem, index) => {
+//   const title = accoItem.querySelector(".acco-items__title");
+//   const content = accoItem.querySelector(".acco-items__contents");
+//   console.log(`Item ${index}:`, {accoItem, title, content});
   
-  if (title) {
-    title.onclick = () => {
-      // 기존 코드
-    };
-  } else {
-    console.error(`Title not found in item ${index}`);
-  }
-});
+//   if (title) {
+//     title.onclick = () => {
+//       // 기존 코드
+//     };
+//   } else {
+//     console.error(`Title not found in item ${index}`);
+//   }
+// });
