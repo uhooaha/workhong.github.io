@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@import url('reset.css');
+
+#wrap{width:100%; height:100%; margin:0 auto; background:url(../images/mobile_bg.jpg) no-repeat bottom center #2b2c36; position:relative;}
+#mobileWraper{ position:absolute; left:50%; bottom:0; margin-left:55px; width:424px; height:756px; overflow-y:auto; -webkit-overflow-scrolling:touch;overflow-x:hidden;}
+
+::-webkit-scrollbar { display: none; }
+element::-webkit-scrollbar { display: none; }
+
+
+#top{ width:424px; height:67px; background:url(../images/mobile_top.png) no-repeat center top; background-size:cover;}
+#top .menu{ width:67px; height:67px; display:block;}
+
+#contentsWrap .menu{width:424px; height:686px; background:url(../images/mobile_menu.png) no-repeat top center;background-size:cover; display:none;}
+#contentsWrap .visualWrap{width:424px; height:442px; overflow:hidden; position:relative;}
+#contentsWrap .visualWrap .image{width:848px; height:442px; position:absolute;background:url(../images/mobile_visual.png) no-repeat center top;background-size:cover;}
+
+#contentsWrap .text1{width:424px; height:442px; position:absolute; top:0; left:0;background:url(../images/mobile_text1.png) no-repeat center top;background-size:cover;}
+#contentsWrap .text2{width:424px; height:442px; position:absolute; top:0; left:0;background:url(../images/mobile_text2.png) no-repeat center top;background-size:cover; opacity:0;}
+
+#contentsWrap .ui{width:424px; height:442px; position:absolute; top:0; left:0;background:url(../images/mobile_ui.png) no-repeat center top;background-size:cover; z-index:1;}
+#contentsWrap .ui .left{width:58px; height:69px; position:absolute; top:84px; left:0; cursor:pointer;}
+#contentsWrap .ui .right{width:58px; height:69px; position:absolute; top:84px; right:0; cursor:pointer;}
+#contentsWrap .ui .indi{width:67px; height:11px; position:absolute; top:266px; left:167px; background:url(../images/mobile_indi.png) no-repeat center top;background-size:cover;}
+	
+#contentsWrap .con1{width:424px; height:1192px; margin-top:-135px;background:url(../images/mobile_con1.png) no-repeat center top;background-size:cover; position:relative;}
+#contentsWrap .con2{width:424px; height:436px;background:url(../images/mobile_con2.png) no-repeat center top;background-size:cover; position:relative;}
+#contentsWrap .con2 .imageWrap{width:356px; height:197px; overflow:hidden; position:absolute; left:34px; top:0;}
+#contentsWrap .con2 .imageWrap .image{width:712px; height:197px; position:absolute;background:url(../images/mobile_con_image.png) no-repeat center top;background-size:cover;}
+#contentsWrap .con2 .textWrap{width:356px; height:238px; overflow:hidden; position:absolute; left:34px; top:197px;}
+#contentsWrap .con2 .textWrap .text{width:712px; height:238px; position:absolute;background:url(../images/mobile_con_text.png) no-repeat center top;background-size:cover;}
+
+#contentsWrap .con2 .ui{width:90px; height:45px; position:absolute; top:153px; left:34px;background:url(../images/mobile_con_ui.png) no-repeat center top;background-size:cover; z-index:1;}
+#contentsWrap .con2 .ui .left{width:45px; height:45px; position:absolute; top:0; left:0; cursor:pointer;}
+#contentsWrap .con2 .ui .right{width:45px; height:45px; position:absolute; top:0; right:0; cursor:pointer;}
+
+#contentsWrap .con3{width:424px; height:1822px;background:url(../images/mobile_con3.png) no-repeat center top;background-size:cover; position:relative;}
