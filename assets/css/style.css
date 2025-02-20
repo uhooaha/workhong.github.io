@@ -125,7 +125,7 @@ a {text-decoration: none;}
 .box-browser > .btn-arr {position: absolute; right:0; width:2rem; height:2rem; }
 .box-browser > .btn-arr > span {font-size: 2rem; color:rgba(255,255,255,80%); }
 .box-img {position: fixed; top:790px; left:420px; transform: translate(-50%, -50%); z-index:10 }
-.box-img > img {width:360px; border:10px solid #09122C; border-radius: 48px; mask-clip: border-box; box-shadow:0px px 30px -8px rgb(9 18 44 / 40%) ;}
+.box-img > img {width:360px; border:10px solid #09122C; border-radius: 0.125rem; mask-clip: border-box; box-shadow:0px px 30px -8px rgb(9 18 44 / 40%) ;}
 
 
 
