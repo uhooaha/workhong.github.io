@@ -23,11 +23,15 @@ acco.forEach((accoItem) => {
         title.onclick = () => {
             if(content.style.maxHeight){
                 closeAcco(accoItem);
+                title.querySelector('.arr-up').classList.add('rotating-arrow');
+                title.querySelector('.arr-up').classList.remove('rotating-arrow-reverse');
             }else {
                 acco.forEach((item) => {
                     const itemContent = item.querySelector(".acco-items__contents");
                     if (itemContent) {
                         closeAcco(item);
+                        title.querySelector('.arr-up').classList.add('rotating-arrow-reverse');
+                        title.querySelector('.arr-up').classList.remove('rotating-arrow');
                     }
                 });
                 openAcco(accoItem);
@@ -36,10 +40,4 @@ acco.forEach((accoItem) => {
     }
 });
 
-// 아코디언 열릴 때
-title.querySelector('.arr-up').classList.add('rotating-arrow');
-title.querySelector('.arr-up').classList.remove('rotating-arrow-reverse');
 
-// 아코디언 닫힐 때
-title.querySelector('.arr-up').classList.add('rotating-arrow-reverse');
-title.querySelector('.arr-up').classList.remove('rotating-arrow');
