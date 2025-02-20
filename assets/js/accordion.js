@@ -1,4 +1,4 @@
-const acco = document.querySelector(".acco-items");
+const acco = document.querySelectorAll(".acco-items");
 
 const openAcco = (accoItem) => {
     const content = accoItem.querySelector(".acco-items__contents");
