@@ -36,33 +36,10 @@ acco.forEach((accoItem) => {
     }
 });
 
-// acco.forEach((accoItem) => {
-//     const title = accoItem.querySelector(".acco-items__title");
-//     const content = accoItem.querySelector(".acco-items__contents");
+// 아코디언 열릴 때
+title.querySelector('.material-symbols-outlined').classList.add('rotating-arrow');
+title.querySelector('.material-symbols-outlined').classList.remove('rotating-arrow-reverse');
 
-//     title.onclick = () => {
-//         if(content.style.maxHeight){
-//             closeAcco(accoItem);
-//         }else {
-//             acco.forEach((accoItem) =>  closeAcco(accoItem));
-//             openAcco(accoItem);
-//         }
-//     }
-// })
-
-// const acco = document.querySelectorAll(".acco-items");
-// console.log("acco elements:", acco, "length:", acco.length);
-
-// acco.forEach((accoItem, index) => {
-//   const title = accoItem.querySelector(".acco-items__title");
-//   const content = accoItem.querySelector(".acco-items__contents");
-//   console.log(`Item ${index}:`, {accoItem, title, content});
-  
-//   if (title) {
-//     title.onclick = () => {
-//       // 기존 코드
-//     };
-//   } else {
-//     console.error(`Title not found in item ${index}`);
-//   }
-// });
+// 아코디언 닫힐 때
+title.querySelector('.material-symbols-outlined').classList.add('rotating-arrow-reverse');
+title.querySelector('.material-symbols-outlined').classList.remove('rotating-arrow');
