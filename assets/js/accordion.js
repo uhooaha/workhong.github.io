@@ -34,4 +34,12 @@ acco.forEach((accoItem) => {
             }
         };
     }
-}); 
+});
+
+// 아코디언 열릴 때
+title.querySelector('.arr-up').classList.add('rotating-arrow');
+title.querySelector('.arr-up').classList.remove('rotating-arrow-reverse');
+
+// 아코디언 닫힐 때
+title.querySelector('.arr-up').classList.add('rotating-arrow-reverse');
+title.querySelector('.arr-up').classList.remove('rotating-arrow');
