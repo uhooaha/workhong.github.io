@@ -85,7 +85,7 @@ h5 { font-size: 1.5rem; line-height: 130%; margin: 1.175rem 0; font-weight: 700;
 .acco-items__contents__data {width:100%; display: flex; justify-content: flex-start; align-items: flex-start; gap: 1rem;}
 .acco-items__contents__data > li {width:120px;}
 .acco-items__contents__data > li  > a > img {width:100%;}
-.btn-contain {margin:1rem 0; padding:0.5rem 1rem; background-color: cornflowerblue; color: #fff; font-weight: 500;}
+.acco-items__contents__info-desc .btn-contain {margin:1rem 0; padding:0.5rem 1rem; background-color: cornflowerblue; color: #fff; font-weight: 500;}
 
 
 
