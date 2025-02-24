@@ -87,8 +87,8 @@ h5 { font-size: 1.5rem; line-height: 130%; margin: 1.175rem 0; font-weight: 700;
 .acco-items__contents__data > li  > a > img {width:100%;}
 .acco-items__contents__info-desc > p:nth-child(2) {display: flex; justify-content: flex-start; align-items: center; gap:2rem; }
 .acco-items__contents__info-desc > p > a {margin:1rem 0; float:left ; font-size: 0.75rem; font-weight: 400; }
-
-
+.acco-items__contents__info-desc > caption {font-size:0.725rem; font-weight: 400; color:#666}
+ 
 
 .acco-active .acco-items__contents{
     padding:0 0 1.5rem 0; 
