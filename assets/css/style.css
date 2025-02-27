@@ -175,5 +175,5 @@ ul.menu-link>li>a::after {transform: 0% 50%;}
 
 
 @media screen and (max-width:1440px) {
-    #contain {  width: (calc(100% - 8rem));  padding: 1.75rem 4rem;}
+    #contain {  width: calc(100% - 8rem);  padding: 1.75rem 4rem;}
 }
