@@ -30,7 +30,7 @@ header { position: fixed; width: (calc(100% - 3.5rem)); height: 4rem;  padding: 
 
 header > nav {  width: 100%;}
 
-#contain {  width: (calc(100% - 8rem));  padding: 1.75rem 4rem;}
+#contain {  width: (calc(100% - 12rem));  padding: 1.75rem 6rem;}
 
 .contain__div {  width: 100%;  margin: 4rem 0; float: left;}
 .contain__div::after { display: block;    clear: both;    content: "";}
