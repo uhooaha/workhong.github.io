@@ -83,7 +83,7 @@ h5 { font-size: 1.5rem; line-height: 130%; margin: 1.175rem 0; font-weight: 700;
 }
 
 .acco-items__contents__info-title > p {font-size:0.825rem; font-weight: 400; padding:0.125rem 0;}
-.acco-items__contents__info-desc {width:100%; padding:2rem 0.75rem 0 }
+.acco-items__contents__info-desc {width:100%; padding:2rem 0 0.75rem 0 }
 .acco-items__contents__data {width:100%; display: flex; justify-content: flex-start; align-items: flex-start; gap: 1rem;}
 .acco-items__contents__data > li {width:120px;}
 .acco-items__contents__data > li  > a > img {width:100%;}
