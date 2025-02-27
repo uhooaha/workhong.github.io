@@ -30,7 +30,7 @@ header { position: fixed; width: (calc(100% - 3.5rem)); height: 4rem;  padding: 
 
 header > nav {  width: 100%;}
 
-#contain {  width: (calc(100% - 12rem));  padding: 1.75rem 6rem;}
+#contain {  width: (calc(100% - 20rem));  padding: 1.75rem 10rem;}
 
 .contain__div {  width: 100%;  margin: 4rem 0; float: left;}
 .contain__div::after { display: block;    clear: both;    content: "";}
@@ -171,3 +171,9 @@ a {text-decoration: none;}
 ul.menu-link>li>a::after {transform: 0% 50%;}
 
 #btn-close > span {color:#fff}
+
+
+
+@media screen and (max-width:1440px) {
+    #contain {  width: (calc(100% - 8rem));  padding: 1.75rem 4rem;}
+}
