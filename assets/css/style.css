@@ -179,7 +179,7 @@ ul.menu-link>li>a::after {transform: 0% 50%;}
 }
 
 @media screen and (max-width:960px) {
-    #contain {  width: calc(100% - 12rem);  padding: 1.75rem 6rem;}
+    #contain {  width: calc(100% - 10rem);  padding: 1.75rem 5rem;}
 }
 
 @media screen and (max-width:482px) {
