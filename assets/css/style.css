@@ -86,7 +86,8 @@ h5 { font-size: 1.5rem; line-height: 130%; margin: 1.175rem 0; font-weight: 700;
 .acco-items__contents__info-desc {width:100%; padding:2rem 0 1rem 0 }
 .info-desc__txt {line-height: 160%;}
 .acco-items__contents__data {width:100%; display: flex; justify-content: flex-start; align-items: flex-start; gap: 1rem;}
-.acco-items__contents__info-desc ul li {margin:0.5rem 0; letter-spacing: -0.5px; padding:0 0 0 1rem; list-style-type: disc;}
+.acco-items__contents__info-desc ul {margin:0; padding-left:0.5rem;}
+.acco-items__contents__info-desc ul > li {margin:0.5rem 0; letter-spacing: -0.5px; list-style-type: "-"; padding-left:0.5rem; font-weight: 300;}
 .acco-items__contents__info-desc ul li::marker {color:#000}
 .acco-items__contents__info-desc > p:nth-child(2) {display: flex; justify-content: flex-start; align-items: center; gap:2rem; }
 .acco-items__contents__info-desc > p > a {margin:1rem 0; float:left ; font-size: 0.875rem; font-weight: 400; }
